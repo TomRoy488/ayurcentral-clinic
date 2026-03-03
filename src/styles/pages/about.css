@@ -1,0 +1,483 @@
+.ayurAptayu-aboutPage {
+  padding: 0 16px;
+  padding-bottom: 4rem;
+}
+.ayurAptayu-container.ayurAptayu-aboutHero{
+  padding: 0;
+  margin-bottom: 20px;
+}
+.ayurAptayu-aboutHero {
+  margin-top: 1rem;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-primary-light);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0px;
+}
+
+.ayurAptayu-aboutHeroContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.ayurAptayu-aboutHeroContent h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: normal;
+  /* max-width: 12ch; */
+}
+
+.ayurAptayu-aboutHero .ayurAptayu-cta {
+  margin: 0;
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  padding: 8px 16px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.ayurAptayu-aboutSocialLinks {
+  width: 100%;
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 14px;
+}
+
+.ayurAptayu-aboutSocialItem {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: var(--ayurAptayu-text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.ayurAptayu-aboutHeroImage {
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.ayurAptayu-aboutMissionSection,
+.ayurAptayu-aboutTeamSection,
+.ayurAptayu-aboutFounderSection,
+.ayurAptayu-aboutMilestoneSection,
+.ayurAptayu-aboutResultsSection {
+  margin-top: 40px;
+}
+
+.ayurAptayu-aboutMissionSection h2,
+.ayurAptayu-aboutFounderSection h2,
+.ayurAptayu-aboutMilestoneSection h2,
+.ayurAptayu-aboutResultsSection h2 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.12;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-aboutMissionSection > p,
+.ayurAptayu-aboutMilestoneSection > p,
+.ayurAptayu-aboutResultsHeader > p {
+  margin-top: 16px;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.ayurAptayu-aboutMissionGrid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.ayurAptayu-aboutMissionCard {
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 20px;
+}
+
+.ayurAptayu-aboutMissionIconWrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background-color: var(--ayurAptayu-card-bg);
+}
+
+.ayurAptayu-aboutMissionIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.ayurAptayu-aboutMissionCard h3 {
+  margin-top: 16px;
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-aboutMissionCard p {
+  margin-top: 16px;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.ayurAptayu-aboutFounderWrap {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.ayurAptayu-aboutFounderImage {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+.ayurAptayu-aboutFounderQuote {
+  margin: 0;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 24px 20px;
+}
+
+.ayurAptayu-aboutFounderQuote p {
+  margin: 0;
+  color: var(--ayurAptayu-primary);
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+}
+
+.ayurAptayu-aboutFounderQuote cite {
+  margin-top: 14px;
+  display: block;
+  color: var(--ayurAptayu-primary);
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ayurAptayu-aboutFounderQuote cite span {
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ayurAptayu-aboutMilestoneGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.ayurAptayu-aboutMilestoneCard {
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 24px 12px;
+  text-align: center;
+}
+
+.ayurAptayu-aboutMilestoneValue {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  color: var(--ayurAptayu-primary);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+}
+
+.ayurAptayu-aboutMilestoneLabel {
+  margin: 10px 0 0;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-aboutResultsGrid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 84vw);
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  padding-bottom: 4px;
+}
+
+.ayurAptayu-aboutResultCard {
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 18px 16px;
+}
+
+.ayurAptayu-aboutResultTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ayurAptayu-aboutResultAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.ayurAptayu-aboutResultTop h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-aboutResultTop p {
+  margin: 4px 0 0;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+}
+
+.ayurAptayu-aboutResultRating {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ayurAptayu-aboutResultLogo {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.ayurAptayu-aboutResultRating p {
+  margin: 0;
+  color: var(--ayurAptayu-primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ayurAptayu-aboutResultStars {
+  color: var(--ayurAptayu-primary);
+  display: inline-flex;
+  gap: 2px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.ayurAptayu-aboutResultStars svg {
+  stroke: currentColor;
+  fill: none;
+}
+
+.ayurAptayu-aboutResultBody {
+  margin-top: 14px;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+@media (min-width: 768px) {
+  .ayurAptayu-container.ayurAptayu-aboutHero{
+    padding: 0px;
+  }
+  .ayurAptayu-aboutHero {
+    margin-top: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    min-height: 30rem;
+  }
+
+  .ayurAptayu-aboutHeroContent {
+    padding: 1.63rem 1.3rem;
+    gap: 18px;
+  }
+
+  .ayurAptayu-aboutHeroContent h1 {
+    font-size: 2.11rem;
+  }
+
+  .ayurAptayu-aboutSocialLinks {
+    margin-top: auto;
+    grid-template-columns: repeat(4, minmax(0, auto));
+    gap: 14px;
+  }
+
+  .ayurAptayu-aboutMissionGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .ayurAptayu-aboutFounderWrap {
+    grid-template-columns: minmax(0, 66%) minmax(0, 34%);
+    align-items: center;
+  }
+
+  .ayurAptayu-aboutFounderQuote {
+    margin-left: -80px;
+  }
+
+  .ayurAptayu-aboutMilestoneGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .ayurAptayu-aboutResultsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ayurAptayu-container.ayurAptayu-aboutHero{
+    padding: 0px;
+  }
+  .ayurAptayu-aboutPage {
+    padding: 0 80px;
+  }
+
+  .ayurAptayu-aboutHero {
+    grid-template-columns: 1.5fr 1fr;
+    min-height: 35rem;
+    position: relative;
+  }
+
+  .ayurAptayu-aboutHeroContent {
+    padding: 40px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .ayurAptayu-aboutHeroContent h1 {
+    margin-top: 0;
+    font-size: 50px;
+    line-height: 1.5;
+    /* max-width: 9ch; */
+  }
+  .ayurAptayu-aboutHero .ayurAptayu-cta {
+    margin: 0;
+    margin-top: 20px;
+    border: 1px solid var(--ayurAptayu-primary);
+    border-radius: 999px;
+    padding: 12px 18px;
+    background-color: var(--ayurAptayu-primary);
+    color: var(--ayurAptayu-card-bg);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+.ayurAptayu-aboutSocialItem {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: var(--ayurAptayu-text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.ayurAptayu-aboutSocialLinks{
+  margin-top: 60px;
+}
+  .ayurAptayu-aboutHeroImage {
+    min-height: 100%;
+    object-position: right bottom;
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ayurAptayu-aboutMissionSection,
+  .ayurAptayu-aboutTeamSection,
+  .ayurAptayu-aboutFounderSection,
+  .ayurAptayu-aboutMilestoneSection,
+  .ayurAptayu-aboutResultsSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-aboutMissionSection h2,
+  .ayurAptayu-aboutFounderSection h2,
+  .ayurAptayu-aboutMilestoneSection h2,
+  .ayurAptayu-aboutResultsSection h2 {
+    font-size: 40px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-aboutMissionSection > p,
+  .ayurAptayu-aboutMilestoneSection > p,
+  .ayurAptayu-aboutResultsHeader > p {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .ayurAptayu-aboutMissionCard h3 {
+    font-size: 20px;
+  }
+
+  .ayurAptayu-aboutFounderQuote p {
+    font-size: 30px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-aboutFounderQuote cite {
+    margin-top: 18px;
+    font-size: 24px;
+  }
+
+  .ayurAptayu-aboutFounderQuote cite span {
+    font-size: 16px;
+  }
+
+  .ayurAptayu-aboutMilestoneValue {
+    font-size: 40px;
+  }
+
+  .ayurAptayu-aboutMilestoneLabel {
+    font-size: 18px;
+  }
+
+  .ayurAptayu-aboutResultsGrid {
+    margin-top: 26px;
+    gap: 40px 16px;
+  }
+}

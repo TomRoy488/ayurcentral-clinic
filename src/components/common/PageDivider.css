@@ -1,0 +1,30 @@
+.ac_page-divider {
+  width: 100%;
+  position: relative;
+  background: #f0f5f6 !important;
+  min-height: 3px;
+  height: 3px;
+  max-height: 3px;
+}
+
+span.ac_page-divider_element {
+  position: absolute;
+  width: 100%;
+  background: #f0f5f6 !important;
+  min-height: 3px;
+  height: 3px;
+  max-height: 3px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  transform: translateX(100%);
+}
+
+span.ac_page-divider_element.ac_page-divider_element-left {
+  transform: translateX(-100%);
+}
+
+span.ac_page-divider_element.ac_page-divider_element-right {
+  transform: translateX(100%);
+}

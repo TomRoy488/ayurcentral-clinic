@@ -1,0 +1,24 @@
+.ayurAptayu-basicPage {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-card-bg);
+  padding: 1rem;
+}
+
+.ayurAptayu-basicPage h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.ayurAptayu-basicPage p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .ayurAptayu-basicPage {
+    padding: 1.5rem;
+  }
+}

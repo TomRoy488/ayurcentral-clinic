@@ -1,0 +1,2613 @@
+.ayurAptayu-homePage {
+  padding: 0px 14px;
+  /* padding-bottom: 4rem; */
+  overflow: hidden;
+}
+
+.ayurAptayu-hero {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  /* border: 1px solid var(--ayurAptayu-border); */
+  background-color: var(--ayurAptayu-primary-light);
+  overflow: hidden;
+  padding-bottom: 0px !important;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ayurAptayu-heroContent {
+  order: 2;
+  padding: 20px 20px;
+  background-color: var(--ayurAptayu-primary-light);
+  position: relative;
+  z-index: 2;
+}
+
+.ayurAptayu-pill {
+  display: inline-flex;
+  align-items: center;
+  /* border: 1px solid var(--ayurAptayu-primary); */
+  border-radius: 0.375rem;
+  padding: 4px 12px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ayurAptayu-pillMuted {
+  background-color: var(--ayurAptayu-primary-light);
+  color: var(--ayurAptayu-primary);
+  border-color: var(--ayurAptayu-border);
+}
+
+.ayurAptayu-heroContent h1 {
+  margin-top: 14px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 14px !important;
+  letter-spacing: -0.03em;
+}
+
+.ayurAptayu-heroSubtitle {
+  margin-top: 0rem;
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ayurAptayu-text-primary);
+  margin-bottom: 14px;
+  /* max-width: 7.15ch; */
+}
+
+.ayurAptayu-heroContent .ayurAptayu-pill {
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.ayurAptayu-heroContent .ayurAptayu-cta {
+  margin: 0px;
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  padding: 12px 16px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ayurAptayu-heroContent .ayurAptayu-cta-ok {
+  margin: 0px;
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  padding: 12px 16px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  width: 100%;
+}
+
+.ayurAptayu-heroContent .ayurAptayu-cta:hover {
+  background-color: var(--ayurAptayu-primary-hover);
+  border-color: var(--ayurAptayu-primary-hover);
+}
+
+.ayurAptayu-heroForm {
+  width: 100%;
+  display: grid;
+  gap: 12px;
+}
+
+.ayurAptayu-heroFormSuccess {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+}
+
+.ayurAptayu-heroFormField {
+  width: 100%;
+  display: grid;
+  gap: 6px;
+}
+
+.ayurAptayu-heroFormField label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-heroFormField input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--ayurAptayu-border);
+  border-radius: 16px;
+  padding: 10px 12px;
+  background-color: var(--ayurAptayu-card-bg);
+  color: var(--ayurAptayu-text-primary);
+  font-size: 16px;
+  outline: none;
+}
+
+.ayurAptayu-heroFormField input:focus {
+  border-color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-heroFormField input:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.ayurAptayu-heroPhoneInputWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--ayurAptayu-border);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--ayurAptayu-card-bg);
+}
+
+.ayurAptayu-heroPhoneInputWrap:focus-within {
+  border-color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-heroPhonePrefix {
+  padding: 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ayurAptayu-text-primary);
+  border-right: 1px solid var(--ayurAptayu-border);
+  line-height: 44px;
+}
+
+.ayurAptayu-heroPhoneInputWrap input {
+  border: none;
+  border-radius: 0;
+  height: 44px;
+}
+
+.ayurAptayu-heroPhoneInputWrap input:focus {
+  border: none;
+}
+
+.ayurAptayu-heroFormError {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.3;
+  color: #b42318;
+}
+
+.ayurAptayu-heroFormStatus {
+  margin: 2px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.ayurAptayu-heroFormStatus.is-success {
+  color: #067647;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ayurAptayu-heroFormStatus.is-error {
+  color: #b42318;
+}
+
+.ayurAptayu-heroForm .ayurAptayu-cta:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.ayurAptayu-heroVisual {
+  order: 1;
+  background-image: url('https://www.ayurcentralonline.com/wp-content/uploads/webp_images/Untitled-design-53.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  min-height: 300px
+}
+
+.ayurAptayu-trustStrip {
+  /* margin-top: 26px; */
+  /* background-color: var(--ayurAptayu-card-bg);
+   */
+   background: transparent;
+  /* border-top: 1px solid var(--ayurAptayu-border); */
+  /* border-bottom: 1px solid var(--ayurAptayu-border); */
+  padding: 20px 0px;
+}
+
+.ayurAptayu-trustStripViewport {
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+.ayurAptayu-container.ayurAptayu-trustStripViewport {
+  padding: 0 !important;
+}
+.ayurAptayu-trustItems {
+  display: flex;
+  align-items: center;
+  min-height: 3rem;
+  width: max-content;
+  white-space: nowrap;
+  animation: ayurAptayuTrustMarquee 26s linear infinite;
+  will-change: transform;
+}
+
+.ayurAptayu-trustItemsGroup {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-right: 40px;
+}
+
+.ayurAptayu-trustItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-trustItem i {
+  width: 12px;
+  height: 12px;
+  background-color: var(--ayurAptayu-primary);
+  transform: rotate(45deg);
+  border-radius: 0px;
+}
+
+@keyframes ayurAptayuTrustMarquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.ayurAptayu-splitSection {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  /* padding-top:0px !important; */
+}
+
+.ayurAptayu-discoverImage {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border: 1px solid var(--ayurAptayu-border);
+  border-radius: 16px;
+}
+
+.ayurAptayu-discoverContent {
+  padding: 0px;
+}
+
+.ayurAptayu-discoverContent h2,
+.ayurAptayu-categorySection h2,
+.ayurAptayu-stepsSection h2 {
+  margin-top: 0.75rem;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+.ayurAptayu-stepsSection h2{
+  margin-bottom: 20px;
+  margin-top: 0px !important;
+}
+.ayurAptayu-discoverContent > p,
+.ayurAptayu-categorySection > p,
+.ayurAptayu-stepContent > p,
+.ayurAptayu-featureItem p,
+.ayurAptayu-pointItem p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.ayurAptayu-featureList {
+  margin-top: 30px;
+  display: grid;
+  gap: 1rem;
+}
+
+.ayurAptayu-featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0rem;
+  flex-direction: column;
+}
+
+.ayurAptayu-featureIcon {
+  width: 52px;
+  height: 52px;
+  min-width: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-primary-light);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.ayurAptayu-featureIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ayurAptayu-featureItem h3,
+.ayurAptayu-stepContent h3,
+.ayurAptayu-pointItem h4 {
+  font-weight: 600;
+}
+
+.ayurAptayu-featureItem h3 {
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+
+}
+
+.ayurAptayu-categorySection,
+.ayurAptayu-stepsSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-packageSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-packageHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.ayurAptayu-packageHeader h2 {
+  margin-top: 0px;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+}
+
+.ayurAptayu-packageHeaderLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  background: transparent;
+  color: var(--ayurAptayu-text-primary);
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.ayurAptayu-packageHeaderLinkIcon {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--ayurAptayu-text-primary);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.ayurAptayu-packageGrid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.ayurAptayu-packageCard {
+  /* border: 1px solid var(--ayurAptayu-border); */
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 16px 14px;
+  padding-right: 10px;
+  padding-bottom: 26px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+
+.ayurAptayu-packageCardTitle {
+  font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+  color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-packageCardMain {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 16px;
+  align-items: end;
+}
+.ayurAptayu-packageCard.ayurAptayu-packageCard-even .ayurAptayu-packageCardMain{
+  grid-template-columns: minmax(0, 1fr) 84px;
+}
+.ayurAptayu-packageCardBody {
+  padding: 0;
+  grid-column: 2 / 3;
+}
+.ayurAptayu-packageCard.ayurAptayu-packageCard-even .ayurAptayu-packageCardBody {
+  padding: 0;
+  grid-column: 1 / 2;
+}
+.ayurAptayu-packageCardImage {
+  width: 120px;
+    height: 90%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left bottom;
+    object-position: center;
+    position: absolute;
+    left: -16px;
+    bottom: -10px;
+}
+
+.ayurAptayu-packageCard.ayurAptayu-packageCard-even .ayurAptayu-packageCardImage {
+  left: auto;
+  right: -16px;
+}
+.ayurAptayu-packageCardBody > p {
+  color: var(--ayurAptayu-text-primary);
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 14px;
+  /* max-width: 24ch; */
+}
+.ayurAptayu-packageCardBody > p.ayurAptayu-packageCardAverage{
+  position: absolute;
+  color: var(--ayurAptayu-text-primary);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.35;
+    right: 10px;
+    bottom: 8px;
+}
+
+.ayurAptayu-packageCard.ayurAptayu-packageCard-even .ayurAptayu-packageCardAverage{
+  right: auto;
+  left: 10px;
+}
+
+.ayurAptayu-packageMetricGrid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0px;
+}
+
+.ayurAptayu-packageMetricItem {
+  display: grid;
+  gap:5px;
+  align-content: start;
+    justify-content: start;
+    align-items: start;
+    justify-items: start;
+}
+
+.ayurAptayu-packageMetricValue {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+}
+
+.ayurAptayu-packageMetricLabel {
+  color: var(--ayurAptayu-text-primary);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+  /* max-width: 9ch; */
+}
+
+.ayurAptayu-packageCardCta {
+  margin-top: 0.7rem;
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.ayurAptayu-experienceSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-experienceSection h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-experienceSection > p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.ayurAptayu-experienceGrid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.ayurAptayu-experienceCard {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+}
+
+.ayurAptayu-experienceCardImage {
+  width: 100%;
+  aspect-ratio: 152 / 182;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.ayurAptayu-experienceCard h3 {
+  margin: 12px 0 0;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-experienceMeta,
+.ayurAptayu-experienceYears,
+.ayurAptayu-experienceDesc {
+  margin: 0;
+  color: var(--ayurAptayu-text-muted);
+}
+
+.ayurAptayu-experienceMeta {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-experienceYears {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-experienceDesc {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ayurAptayu-text-muted);
+}
+
+.ayurAptayu-experienceMetricSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-experienceMetricGrid {
+  /* margin-top: 24px; */
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 22px 12px;
+  overflow-x: auto;
+  overflow-y: visible;
+  overscroll-behavior-x: contain;
+  padding: 20px 6px 4px;
+}
+
+.ayurAptayu-experienceMetricCard {
+  position: relative;
+  padding: 18px 16px;
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+}
+
+.ayurAptayu-experienceMetricPill {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 8px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-size: 12px;
+  line-height: 1.15;
+  padding: 6px 16px;
+  white-space: nowrap;
+}
+
+.ayurAptayu-experienceMetricMain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ayurAptayu-experienceMetricIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.ayurAptayu-experienceMetricText {
+  min-width: 0;
+}
+
+.ayurAptayu-experienceMetricValue {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+  color: var(--ayurAptayu-primary);
+  margin-top: 5px;
+}
+
+.ayurAptayu-experienceMetricLabel {
+  margin: 6px 0 0;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-curiousSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-curiousBackdrop {
+  min-height: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  padding: 0;
+  display: block;
+  padding-top: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ayurAptayu-curiousPanel {
+  width: 100%;
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ayurAptayu-curiousPanel h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-curiousPanel h3 {
+  margin: 0.75rem 0 0;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--ayurAptayu-text-primary);
+  font-weight: 600;
+}
+
+.ayurAptayu-curiousPanel > p {
+  margin-top: 0.75rem;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ayurAptayu-text-muted);
+}
+
+.ayurAptayu-curiousStats {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px 26px;
+}
+
+.ayurAptayu-curiousStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.ayurAptayu-curiousStatIcon {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-card-bg);
+}
+
+.ayurAptayu-curiousStatIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ayurAptayu-curiousStat p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--ayurAptayu-text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.ayurAptayu-curiousCta {
+  margin: 0 auto;
+  margin-top: 18px;
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-size: 14px;
+  line-height: 1.1;
+  padding: 12px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .ayurAptayu-curiousStat:nth-child(3) {
+    /* display: none; */
+  }
+}
+
+.ayurAptayu-favoriteSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-favoriteSection h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-favoriteGrid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(250px, 74vw);
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  padding-bottom: 4px;
+}
+
+.ayurAptayu-favoriteCard {
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+  overflow: hidden;
+}
+
+.ayurAptayu-favoriteMedia {
+  position: relative;
+}
+
+.ayurAptayu-favoriteVideo {
+  width: 100%;
+  aspect-ratio: 0.67 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.ayurAptayu-favoriteAuthor {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ayurAptayu-favoriteAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.ayurAptayu-favoriteAuthor span {
+  color: var(--ayurAptayu-card-bg);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.ayurAptayu-favoriteBody {
+  padding: 16px 14px;
+}
+
+.ayurAptayu-favoriteBody h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--ayurAptayu-text-primary);
+  font-weight: 600;
+}
+
+.ayurAptayu-clientsSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-clientsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ayurAptayu-clientsHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-clientsNav {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.ayurAptayu-clientsNav button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--ayurAptayu-border);
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-card-bg);
+  color: var(--ayurAptayu-text-primary);
+  cursor: pointer;
+}
+
+.ayurAptayu-clientsGrid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 86vw);
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  padding-bottom: 6px;
+}
+
+.ayurAptayu-clientCard {
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+  overflow: hidden;
+}
+
+.ayurAptayu-clientCardBody {
+  padding: 20px 16px;
+}
+
+.ayurAptayu-clientQuote {
+  margin: 0;
+  color: var(--ayurAptayu-primary);
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.ayurAptayu-clientText {
+  margin: 12px 0 0;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-clientAuthor {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ayurAptayu-clientAuthorAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  object-fit: cover;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.ayurAptayu-clientAuthor p {
+  margin: 0;
+  color: var(--ayurAptayu-text-primary);
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.ayurAptayu-clientCardImage {
+  width: 100%;
+  aspect-ratio: 1.2 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.ayurAptayu-lifetimeSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-lifetimeBanner {
+  /* min-height: 320px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 72% center;
+  background-blend-mode: multiply;
+  background-color: #0000003f;
+  padding: 24px 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+.ayurAptayu-lifetimeContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.ayurAptayu-lifetimeContent h2 {
+  margin: 0;
+  color: var(--ayurAptayu-card-bg);
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.ayurAptayu-lifetimeForm {
+  width: 100%;
+  max-width: 420px;
+}
+
+.ayurAptayu-lifetimeForm .ayurAptayu-heroFormField label {
+  color: var(--ayurAptayu-card-bg);
+}
+
+.ayurAptayu-lifetimeForm .ayurAptayu-heroFormField input,
+.ayurAptayu-lifetimeForm .ayurAptayu-heroPhoneInputWrap {
+  border-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.ayurAptayu-lifetimeForm .ayurAptayu-heroPhonePrefix {
+  border-right-color: rgba(0, 0, 0, 0.1);
+}
+
+.ayurAptayu-lifetimeForm .ayurAptayu-cta,
+.ayurAptayu-lifetimeForm .ayurAptayu-cta-ok {
+  margin: 0;
+  width: 100%;
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  padding: 12px 16px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ayurAptayu-lifetimeForm .ayurAptayu-heroFormStatus {
+  color: var(--ayurAptayu-card-bg);
+}
+
+.ayurAptayu-lifetimeForm .ayurAptayu-heroFormStatus.is-error {
+  color: #fff2f2;
+  background-color: rgba(122, 10, 10, 0.72);
+  border: 1px solid rgba(255, 180, 180, 0.45);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.ayurAptayu-lifetimeForm .ayurAptayu-heroFormError {
+  color: #fff2f2;
+  background-color: rgba(122, 10, 10, 0.72);
+  border: 1px solid rgba(255, 180, 180, 0.45);
+  padding: 5px 8px;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.ayurAptayu-lifetimeForm .ayurAptayu-heroFormSuccess {
+  justify-items: stretch;
+}
+
+.ayurAptayu-lifetimeCta {
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.ayurAptayu-transformSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-transformSection h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-transformGrid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.ayurAptayu-transformCard {
+  aspect-ratio: 1 / 1;
+  min-height: 0;
+  padding: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ayurAptayu-transformCard h3 {
+  margin: 0;
+  color: var(--ayurAptayu-card-bg);
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 700;
+  /* max-width: 13ch; */
+}
+
+.ayurAptayu-faqSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-faqHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ayurAptayu-faqHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-faqTabList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  
+}
+
+.ayurAptayu-faqTab {
+  border: none;
+  border-right: 1px solid var(--ayurAptayu-border);
+  padding: 0 16px;
+  min-height: 34px;
+  background: transparent;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.ayurAptayu-faqTab:first-child {
+  padding-left: 0;
+}
+
+.ayurAptayu-faqTab:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.ayurAptayu-faqTab.is-active {
+  background-color: transparent;
+  color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-faqGrid {
+  /* margin-top: 22px; */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.ayurAptayu-faqItem {
+  border-bottom: 1px solid var(--ayurAptayu-border);
+}
+
+.ayurAptayu-faqTrigger {
+  width: 100%;
+  border: none;
+  background: transparent;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 14px;
+  text-align: left;
+  padding: 20px 0 16px;
+  color: var(--ayurAptayu-text-primary);
+  cursor: pointer;
+}
+
+.ayurAptayu-faqTrigger > span:first-child {
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.ayurAptayu-faqIcon {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  font-size: 24px;
+  line-height: 0;
+  font-weight: 300;
+  color: var(--ayurAptayu-text-primary);
+  transition: transform 0.3s ease, background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.ayurAptayu-faqItem.is-open .ayurAptayu-faqIcon {
+  transform: rotate(180deg);
+  background-color: var(--ayurAptayu-primary);
+  border-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+}
+
+.ayurAptayu-faqAnswerWrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.35s ease, opacity 0.3s ease, padding-bottom 0.35s ease;
+  padding-bottom: 0;
+}
+
+.ayurAptayu-faqAnswerInner {
+  overflow: hidden;
+}
+
+.ayurAptayu-faqAnswerInner p {
+  margin: 0;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  /* max-width: 63ch; */
+}
+
+.ayurAptayu-faqItem.is-open .ayurAptayu-faqAnswerWrap {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  padding-bottom: 20px;
+}
+
+.ayurAptayu-newsletterSection {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-newsletterPanel {
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 24px 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.ayurAptayu-newsletterContent h2 {
+  margin: 0;
+  color: var(--ayurAptayu-text-primary);
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+
+}
+
+.ayurAptayu-newsletterContent p {
+  margin: 0.75rem 0 0;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-newsletterForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-content: center;
+}
+
+.ayurAptayu-newsletterLabel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.ayurAptayu-newsletterInput {
+  width: 100%;
+  border: 1px solid var(--ayurAptayu-border);
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-card-bg);
+  color: var(--ayurAptayu-text-primary);
+  height: 44px;
+  padding: 10px 12px;
+  font-size: 16px;
+  line-height: 1.2;
+  outline: none;
+}
+
+.ayurAptayu-newsletterInput::placeholder {
+  color: var(--ayurAptayu-text-muted);
+}
+
+.ayurAptayu-newsletterInput:focus {
+  border-color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-newsletterButton {
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  /* height: 58px; */
+  padding: 10px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  justify-self: start;
+}
+
+.ayurAptayu-container.ayurAptayu-categorySection h2{
+margin-top: 0px !important;
+}
+
+.ayurAptayu-categoryGrid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.ayurAptayu-categoryItem {
+  /* border: 1px solid var(--ayurAptayu-border); */
+  border-radius: 16px;
+  background: var(--ayurAptayu-primary-light);
+  padding: 16px 14px;
+  display: grid;
+  gap: 18px;
+}
+
+.ayurAptayu-categoryItem h3 {
+  margin: 0;
+  color: var(--ayurAptayu-text-primary);
+  font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.ayurAptayu-categorySymptoms {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px 5px;
+}
+
+.ayurAptayu-categorySymptom {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  text-align: center;
+  gap: 8px;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.ayurAptayu-categorySymptomImageWrap {
+  width: 92px;
+  height: 92px;
+  border-radius: 999px;
+  overflow: hidden;
+  /* border: 1px solid rgba(0, 0, 0, 0.04); */
+  background: #d9c6c2;
+}
+
+.ayurAptayu-categorySymptomImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ayurAptayu-categorySymptomText {
+  margin: 0;
+  color: var(--ayurAptayu-text-primary);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.ayurAptayu-categoryFooter {
+  display: grid;
+  gap: 12px;
+  align-items: center;
+}
+
+.ayurAptayu-categoryKnownAs {
+  margin: 0;
+  color: var(--ayurAptayu-text-primary);
+  font-size: 14px;
+  line-height: 1.4;
+  background: var(--ayurAptayu-card-bg);
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+
+.ayurAptayu-categoryKnownAs strong {
+  color: var(--ayurAptayu-text-primary);
+  font-weight: 600;
+}
+
+.ayurAptayu-categoryKnownAs span {
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-categoryCallback {
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  background: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 4px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  width: 100%;
+}
+
+.ayurAptayu-categoryCallback:hover {
+  background-color: var(--ayurAptayu-primary-hover);
+  border-color: var(--ayurAptayu-primary-hover);
+}
+
+.ayurAptayu-stepsList {
+  margin-top: 1rem;
+  display: grid;
+  gap: 30px;
+}
+
+.ayurAptayu-stepCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-card-bg);
+  padding: 1rem;
+}
+
+.ayurAptayu-stepCardFirst {
+  gap: 20px;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-stepImage {
+  order: 1;
+  width: 100%;
+  min-height: 0;
+  height: 300px;
+  border: none;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-stepContent {
+  order: 2;
+}
+
+.ayurAptayu-stepCard .ayurAptayu-pill {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-stepContent h3 {
+  
+  margin-top: 0.75rem;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-stepContent > p {
+  margin-top: 0.75rem;
+    color: var(--ayurAptayu-text-muted);
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-pointGrid {
+  margin-top: 30px;
+  gap: 1rem;
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-pointItem {
+  /* gap: 12px; */
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-dot {
+  margin-top: 0;
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: #f6ebda;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-dotIcon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-pointItem h4 {
+  font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+}
+
+.ayurAptayu-stepCardFirst .ayurAptayu-pointItem p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.ayurAptayu-stepImage {
+  width: 100%;
+  min-height: 14rem;
+  object-fit: cover;
+  border: 1px solid var(--ayurAptayu-border);
+}
+
+.ayurAptayu-stepContent h3 {
+  margin-top: 0.75rem;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.ayurAptayu-pointGrid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.ayurAptayu-pointItem {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  /* gap: 0.55rem; */
+}
+
+.ayurAptayu-dot {
+  margin-top: 0.45rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  min-width: 0.7rem;
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-dotIcon {
+  display: none;
+  width: 22px;
+  height: 22px;
+}
+
+@media (min-width: 768px) {
+  .ayurAptayu-hero {
+    margin-top: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 30rem;
+  }
+
+  .ayurAptayu-heroContent {
+    order: 1;
+    padding: 1.63rem 1.3rem;
+  }
+
+  .ayurAptayu-heroContent h1 {
+    font-size: 2.11rem;
+  }
+
+  .ayurAptayu-heroSubtitle {
+    font-size: 1.37rem;
+    /* max-width: 11.7ch; */
+  }
+
+  .ayurAptayu-heroVisual {
+    order: 2;
+    background-image: url('https://www.ayurcentralonline.com/wp-content/uploads/webp_images/Untitled-design-12-1.webp');
+    min-height: 30rem;
+    background-size: cover;
+    background-position: 74% center;
+  }
+
+  .ayurAptayu-splitSection {
+    grid-template-columns: 1fr 1.08fr;
+    align-items: stretch;
+  }
+
+  .ayurAptayu-categoryGrid {
+    margin-top: 32px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .ayurAptayu-categoryItem {
+    padding: 22px 20px;
+  }
+
+  .ayurAptayu-categoryItem h3 {
+    font-size: 26px;
+  }
+
+  .ayurAptayu-categorySymptoms {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px 12px;
+  }
+
+  .ayurAptayu-categorySymptomImageWrap {
+    width: 98px;
+    height: 98px;
+  }
+
+  .ayurAptayu-categoryKnownAs {
+    font-size: 14px;
+  }
+
+  .ayurAptayu-categoryFooter {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 14px;
+  }
+
+  .ayurAptayu-categoryCallback {
+    width: auto;
+    min-width: 188px;
+    padding-inline: 22px;
+  }
+
+  .ayurAptayu-pointGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ayurAptayu-packageGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ayurAptayu-packageCardMain {
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .ayurAptayu-packageCardImage {
+    height: 90%;
+  }
+
+  .ayurAptayu-experienceGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ayurAptayu-experienceMetricGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ayurAptayu-curiousStats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ayurAptayu-favoriteGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .ayurAptayu-clientsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .ayurAptayu-lifetimeBanner {
+    min-height: 280px;
+  }
+
+  .ayurAptayu-transformGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .ayurAptayu-homePage{
+    padding: 0px 80px;
+  }
+
+  .ayurAptayu-splitSection {
+    margin-top: 2.1rem;
+    grid-template-columns: minmax(0, 48.5%) minmax(0, 51.5%);
+    gap: 30px;
+  }
+
+  .ayurAptayu-discoverImage {
+    max-height: 600px;
+    height: 100%;
+  }
+
+  .ayurAptayu-discoverContent {
+    padding: 0px;
+  }
+
+  .ayurAptayu-discoverContent h2, .ayurAptayu-categorySection h2, .ayurAptayu-stepsSection h2 {
+    margin-top: 1.15rem;
+    font-size: 40px;
+    line-height: 1.16;
+    /* max-width: 13ch; */
+  }
+
+  .ayurAptayu-discoverContent > p, .ayurAptayu-categorySection > p {
+    margin-top: 1.45rem;
+    font-size: 18px;
+    line-height: 1.45;
+    /* max-width: 43ch; */
+  }
+
+  .ayurAptayu-featureList {
+    margin-top: 50px;
+    gap: 1.6rem;
+  }
+
+  .ayurAptayu-featureItem {
+    gap: 24px;
+  }
+
+  .ayurAptayu-featureIcon {
+    width: 60px;
+    height: 60px;
+    /* min-width: 4.35rem; */
+    border-width: 1px;
+  }
+
+  .ayurAptayu-featureIcon img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ayurAptayu-featureItem h3 {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .ayurAptayu-featureItem p {
+    margin-top: 0.35rem;
+    font-size: 0.9rem;
+    line-height: 1.42;
+    max-width: 50ch;
+  }
+
+  .ayurAptayu-hero {
+        grid-template-columns: 1.7fr 1fr;
+        min-height: 35rem;
+        position: relative;
+        padding: 0px !important;
+  }
+
+  .ayurAptayu-heroContent {
+    padding: 8% 50px;
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background: transparent;
+  }
+
+  .ayurAptayu-heroContent .ayurAptayu-pill {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  .ayurAptayu-heroContent h1 {
+    margin: 0;
+    margin-top: 20px;
+    
+    font-size: 65px;
+    line-height: normal;
+  }
+
+  .ayurAptayu-heroSubtitle {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    /* max-width: 8.45ch; */
+  }
+
+  .ayurAptayu-heroContent .ayurAptayu-cta {
+    margin: 0px;
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+
+  .ayurAptayu-heroVisual {
+    min-height: 40rem;
+    background-size: auto 100%;
+    background-position: right bottom;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ayurAptayu-trustItems {
+    animation-duration: 32s;
+  }
+
+  .ayurAptayu-categoryGrid {
+    margin-top: 40px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .ayurAptayu-categoryItem {
+    border-radius: 24px;
+    padding: 22px;
+    gap: 16px;
+  }
+
+  .ayurAptayu-categoryItem h3 {
+    font-size: 28px;
+    line-height: 1.16;
+  }
+
+  .ayurAptayu-categorySymptoms {
+    gap: 20px 16px;
+  }
+
+  .ayurAptayu-categorySymptom {
+    gap: 12px;
+  }
+
+  .ayurAptayu-categorySymptomImageWrap {
+    width: 106px;
+    height: 106px;
+  }
+
+  .ayurAptayu-categorySymptom {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .ayurAptayu-categoryKnownAs {
+    margin-top: 2px;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 12px 16px;
+  }
+
+  .ayurAptayu-categoryCallback {
+    font-size: 16px;
+    min-height: 52px;
+    min-width: 220px;
+  }
+
+  .ayurAptayu-stepCard {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: stretch;
+  }
+
+  .ayurAptayu-stepsSection {
+    margin-top: 32px;
+  }
+
+  .ayurAptayu-stepsSection h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    /* font-size: 30px; */
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    /* max-width: 24ch; */
+  }
+
+  .ayurAptayu-stepCardFirst {
+    grid-template-columns: minmax(0, 54%) minmax(0, 46%);
+    gap: 32px;
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  .ayurAptayu-stepCardFirst .ayurAptayu-stepContent {
+    padding-top: 2px;
+    order: 1;
+  }
+
+  .ayurAptayu-stepCardFirst .ayurAptayu-pill {
+    /* border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.1;
+    background-color: #6459c9;
+    color: #ffffff; */
+  }
+
+  .ayurAptayu-stepCardFirst .ayurAptayu-stepContent h3 {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 1.5;
+    /* letter-spacing: -0.02em; */
+  }
+
+  .ayurAptayu-stepCardFirst .ayurAptayu-stepContent > p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.55;
+    color: #5e5e73;
+    /* max-width: 32ch; */
+  }
+
+  .ayurAptayu-stepCardFirst .ayurAptayu-pointGrid {
+    margin-top: 27px;
+    gap: 24px;
+  }
+  .ayurAptayu-stepsList{
+    gap: 40px;
+  }
+  .ayurAptayu-stepCardFirst .ayurAptayu-pointItem {
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .ayurAptayu-stepCardFirst .ayurAptayu-dot {
+    margin-top: 0;
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    /* min-width: 28px; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #f6ebda;
+  }
+
+  .ayurAptayu-stepCardFirst .ayurAptayu-dotIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ayurAptayu-stepCardFirst .ayurAptayu-pointItem h4 {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-stepCardFirst .ayurAptayu-pointItem p {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.42;
+    color: #5e5e73;
+    max-width: 30ch;
+  }
+  .ayurAptayu-stepCard.ayurAptayu-stepCardFirst.ayurAptayu-stepCardTwo.ayurAptayu-stepCardFirst .ayurAptayu-stepContent{
+    order: 2;
+    }
+    .ayurAptayu-stepCard.ayurAptayu-stepCardFirst.ayurAptayu-stepCardTwo.ayurAptayu-stepCardFirst .ayurAptayu-stepImage{
+      order: 1;
+    }
+  .ayurAptayu-stepCardFirst .ayurAptayu-stepImage {
+    order: 2;
+    border: none;
+    min-height: 450px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1 / 1;
+  }
+
+  .ayurAptayu-stepCardReverse {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .ayurAptayu-stepCardReverse .ayurAptayu-stepContent {
+    order: 2;
+  }
+
+  .ayurAptayu-stepCardReverse .ayurAptayu-stepImage {
+    order: 1;
+  }
+
+  .ayurAptayu-packageSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-packageHeader {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .ayurAptayu-packageHeader h2 {
+    font-size: 40px;
+    line-height: 1.16;
+    max-width: none;
+  }
+
+  .ayurAptayu-packageHeaderLink {
+    font-size: 18px;
+  }
+
+  .ayurAptayu-packageHeaderLinkIcon {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .ayurAptayu-packageGrid {
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  .ayurAptayu-packageCard {
+    padding: 30px;
+    /* min-height: 324px; */
+  }
+
+  .ayurAptayu-packageCardTitle {
+    font-size: 30px;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-packageCardMain {
+    margin-top: 16px;
+    grid-template-columns: minmax(0, 24%) minmax(0, 76%);
+    gap: 18px;
+    align-items: end;
+  }
+
+  .ayurAptayu-packageCardImage {
+    height: 90%;
+    width: 180px;
+  }
+
+  .ayurAptayu-packageCardBody > p {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 38ch;
+  }
+
+  .ayurAptayu-packageMetricGrid {
+    margin-top: 16px;
+    gap: 12px;
+  }
+
+  .ayurAptayu-packageMetricValue {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .ayurAptayu-packageMetricLabel {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .ayurAptayu-packageCardCta {
+    margin-top: 30px;
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .ayurAptayu-experienceSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-experienceSection h2 {
+    font-size: 40px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    /* max-width: 32ch; */
+  }
+
+  .ayurAptayu-experienceSection > p {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 1.45;
+    /* max-width: 74ch; */
+  }
+
+  .ayurAptayu-experienceGrid {
+    margin-top: 48px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .ayurAptayu-experienceCard {
+    padding: 20px;
+  }
+
+  .ayurAptayu-experienceCard h3 {
+    margin-top: 26px;
+    font-size: 20px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-experienceMeta {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .ayurAptayu-experienceYears {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .ayurAptayu-experienceDesc {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .ayurAptayu-experienceMetricSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-experienceMetricGrid {
+    margin-top: 0;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 45px 30px;
+  }
+
+  .ayurAptayu-experienceMetricCard {
+    /* min-height: 98px; */
+    padding: 20px;
+  }
+
+  .ayurAptayu-experienceMetricPill {
+    border-radius: 7px;
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 7px 16px;
+  }
+
+
+  .ayurAptayu-experienceMetricIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ayurAptayu-curiousSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-curiousBackdrop {
+    min-height: 560px;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: left center;
+  }
+
+  .ayurAptayu-curiousPanel {
+    width: min(50%, 686px);
+    margin-top: 0;
+    padding: 40px 40px 40px;
+    border-radius: 16px;
+  }
+
+  .ayurAptayu-curiousPanel h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-curiousPanel h3 {
+    margin-top: 16px;
+    font-size: 30px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-curiousPanel > p {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.45;
+    /* max-width: 42ch; */
+  }
+
+  .ayurAptayu-curiousStats {
+    margin-top: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0px;
+  }
+
+  .ayurAptayu-curiousStat {
+    gap: 8px;
+  }
+
+  .ayurAptayu-curiousStatIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ayurAptayu-curiousStat p {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .ayurAptayu-curiousCta {
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 12px 18px;
+    gap: 10px;
+    font-weight: 500;
+  }
+
+  .ayurAptayu-favoriteSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-favoriteSection h2 {
+    font-size: 40px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-favoriteGrid {
+    margin-top: 40px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .ayurAptayu-favoriteVideo {
+    /* aspect-ratio: 0.87 / 1; */
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+  .ayurAptayu-favoriteAuthor {
+    top: 14px;
+    left: 14px;
+    gap: 10px;
+  }
+
+  .ayurAptayu-favoriteAvatar {
+    width: 34px;
+    height: 34px;
+  }
+
+  .ayurAptayu-favoriteAuthor span {
+    font-size: 16px;
+  }
+
+  .ayurAptayu-favoriteBody {
+    padding: 20px 16px;
+  }
+
+  .ayurAptayu-favoriteBody h3 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .ayurAptayu-clientsSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-clientsHeader h2 {
+    font-size: 40px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-clientsNav {
+    display: inline-flex;
+  }
+
+  .ayurAptayu-clientsGrid {
+    margin-top: 26px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 16px;
+  }
+
+  .ayurAptayu-clientCard {
+    display: grid;
+    grid-template-columns: minmax(0, 50%) minmax(0, 50%);
+    min-height: 340px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .ayurAptayu-clientCardBody {
+    padding: 40px;
+  }
+
+  .ayurAptayu-clientQuote {
+    font-size: 20px;
+    line-height: 1.15;
+    /* max-width: 11ch; */
+    letter-spacing: -0.01em;
+  }
+
+  .ayurAptayu-clientText {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.45;
+    max-width: 30ch;
+  }
+
+  .ayurAptayu-clientAuthor {
+    margin-top: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ayurAptayu-clientAuthorAvatar {
+    width: 44px;
+    height: 44px;
+  }
+
+  .ayurAptayu-clientAuthor p {
+    font-size: 16px;
+  }
+
+  .ayurAptayu-clientCardImage {
+    height: 100%;
+    /* aspect-ratio: auto; */
+  }
+
+  .ayurAptayu-lifetimeSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-lifetimeBanner {
+    min-height: 200px;
+    padding: 40px 30px;
+    border-radius: 16px;
+  }
+
+  .ayurAptayu-lifetimeContent {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+    align-items: start;
+    gap: 30px;
+  }
+
+  .ayurAptayu-lifetimeContent h2 {
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    /* max-width: 30ch; */
+  }
+
+  .ayurAptayu-lifetimeForm {
+    justify-self: end;
+  }
+
+  .ayurAptayu-lifetimeCta {
+    justify-self: end;
+    font-size: 18px;
+    padding: 12px 18px;
+    gap: 12px;
+  }
+
+  .ayurAptayu-transformSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-transformSection h2 {
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-transformGrid {
+    margin-top: 24px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .ayurAptayu-transformCard {
+    min-height: 300px;
+    aspect-ratio: 1;
+    padding: 24px;
+  }
+
+  .ayurAptayu-transformCard h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    /* max-width: 10ch; */
+  }
+
+  .ayurAptayu-faqSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-faqHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .ayurAptayu-faqHeader h2 {
+    font-size: 40px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-faqTabList {
+    border-radius: 0;
+    border: none;
+    width: auto;
+  }
+
+  .ayurAptayu-faqTab {
+    /* min-height: 92px; */
+    padding: 0 28px;
+    border-right: 1px solid var(--ayurAptayu-border);
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  .ayurAptayu-faqTab:last-child {
+    padding-right: 0;
+  }
+
+  .ayurAptayu-faqGrid {
+    margin-top: 0px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0px 30px;
+  }
+
+  .ayurAptayu-faqItem {
+    /* min-height: 150px; */
+  }
+
+  .ayurAptayu-faqTrigger {
+    padding: 40px 0 24px;
+  }
+
+  .ayurAptayu-faqTrigger > span:first-child {
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  /* .ayurAptayu-faqIcon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    font-size: 50px;
+  } */
+
+  .ayurAptayu-faqAnswerInner p {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .ayurAptayu-faqItem.is-open .ayurAptayu-faqAnswerWrap {
+    padding-bottom: 30px;
+  }
+
+  .ayurAptayu-newsletterSection {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-newsletterPanel {
+    grid-template-columns: minmax(0, 52%) minmax(0, 48%);
+    align-items: center;
+    gap: 38px;
+    padding: 40px 50px;
+    border-radius: 16px;
+  }
+
+  .ayurAptayu-newsletterContent h2 {
+    font-size: 40px;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+  }
+
+  .ayurAptayu-newsletterContent p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.32;
+  }
+
+  .ayurAptayu-newsletterForm {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* .ayurAptayu-newsletterInput {
+    height: 86px;
+    padding: 0 34px;
+    font-size: 33px;
+  } */
+/* 
+  .ayurAptayu-newsletterButton {
+    height: 86px;
+    padding: 0 38px;
+    min-width: 232px;
+    font-size: 37px;
+    gap: 12px;
+  } */
+
+
+
+}

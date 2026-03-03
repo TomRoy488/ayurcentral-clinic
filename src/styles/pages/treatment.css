@@ -1,0 +1,1180 @@
+.ayurAptayu-treatmentPage {
+  padding: 0 14px;
+  overflow: hidden;
+}
+
+.ayurAptayu-container.ayurAptayu-treatmentHero {
+  padding: 0;
+  margin: 20px 0 !important;
+}
+
+.ayurAptayu-treatmentHero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'image'
+    'content'
+    'proof';
+  background-color: var(--ayurAptayu-primary-light);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ayurAptayu-treatmentHeroImage {
+  grid-area: image;
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid var(--ayurAptayu-border);
+}
+
+.ayurAptayu-treatmentHeroContent {
+  grid-area: content;
+  padding: 20px 16px;
+}
+
+.ayurAptayu-treatmentHeroContent h1 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.ayurAptayu-treatmentHeroContent > p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-treatmentHeroRatings {
+  margin-top: 20px;
+  display: flex;
+  gap: 5px;
+  /* grid-template-columns: repeat(3, max-content); */
+}
+
+.ayurAptayu-treatmentHeroRatings span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ayurAptayu-primary);
+  line-height: 1.2;
+}
+
+.ayurAptayu-treatmentHeroRatings img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.ayurAptayu-treatmentProofGrid {
+  grid-area: proof;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--ayurAptayu-border);
+}
+
+.ayurAptayu-treatmentProofCard {
+  padding: 14px 10px;
+  background-color: var(--ayurAptayu-primary-light);
+  border-right: 1px solid var(--ayurAptayu-border);
+  border-bottom: 1px solid var(--ayurAptayu-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ayurAptayu-treatmentProofCard:nth-child(3),
+.ayurAptayu-treatmentProofCard:nth-child(4) {
+  /* border-right: 0; */
+}
+
+.ayurAptayu-treatmentProofCard:nth-child(4) {
+  /* grid-column: 1 / -1; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ayurAptayu-treatmentProofMetric {
+  margin: 0 0 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ayurAptayu-treatmentProofCard:nth-child(4) .ayurAptayu-treatmentProofMetric {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.ayurAptayu-treatmentProofTrend {
+  font-size: 10px;
+}
+
+.ayurAptayu-treatmentProofCard span {
+  margin: 0;
+  display: block;
+  font-size: 12px;
+  line-height: 1.35;
+  text-align: center;
+  /* color: var(--ayurAptayu-text-primary); */
+}
+
+.ayurAptayu-treatmentBenefits,
+.ayurAptayu-treatmentRisks,
+.ayurAptayu-treatmentOutcomes,
+.ayurAptayu-treatmentPlan,
+.ayurAptayu-treatmentCost,
+.ayurAptayu-treatmentDoctors,
+.ayurAptayu-treatmentStatBanner,
+.ayurAptayu-treatmentJourney,
+.ayurAptayu-treatmentQuiz {
+  margin-top: 2rem;
+}
+
+.ayurAptayu-treatmentBenefits h2,
+.ayurAptayu-treatmentOutcomes h2,
+.ayurAptayu-treatmentPlan h2,
+.ayurAptayu-treatmentCost h2,
+.ayurAptayu-treatmentDoctors h2,
+.ayurAptayu-treatmentJourney h2,
+.ayurAptayu-treatmentQuiz h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.ayurAptayu-treatmentBenefits > p,
+.ayurAptayu-treatmentCost > p,
+.ayurAptayu-treatmentDoctors > p,
+.ayurAptayu-treatmentJourney > p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-treatmentBenefitsGrid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px 10px;
+}
+
+.ayurAptayu-treatmentBenefitCard {
+  padding: 10px;
+  text-align: center;
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+}
+
+.ayurAptayu-treatmentBenefitCard img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.ayurAptayu-treatmentBenefitCard p {
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.ayurAptayu-container.ayurAptayu-treatmentRisks {
+  padding: 20px 16px;
+}
+
+.ayurAptayu-treatmentRisks {
+  display: grid;
+  gap: 20px;
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+}
+
+.ayurAptayu-treatmentRisksIntro h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.ayurAptayu-treatmentRisksIntro p {
+  margin: 0.75rem 0 0;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-treatmentRisksGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.ayurAptayu-treatmentRiskItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.ayurAptayu-treatmentRiskItem > span {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 999px;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-card-bg);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ayurAptayu-treatmentRiskItem > span img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ayurAptayu-treatmentRiskItem h4 {
+  margin: 6px 0 0;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.ayurAptayu-treatmentRiskItem p {
+  margin: 0.75rem 0 0;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-treatmentOutcomesGrid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ayurAptayu-treatmentOutcomeCard {
+  min-height: 150px;
+  padding: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ayurAptayu-treatmentOutcomesGrid .ayurAptayu-treatmentOutcomeCard:nth-child(5) {
+  grid-column: 1 / -1;
+}
+
+.ayurAptayu-treatmentOutcomeCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.08));
+}
+
+.ayurAptayu-treatmentOutcomeCard h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: var(--ayurAptayu-card-bg);
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+.ayurAptayu-treatmentPlan {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.ayurAptayu-treatmentPlanIntro {
+  order: 2;
+}
+
+.ayurAptayu-treatmentPlanIntro p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-treatmentPlanIntro ul {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.ayurAptayu-treatmentPlanIntro li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.ayurAptayu-treatmentPlanIntro li img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  background-color: var(--ayurAptayu-primary);
+  border-radius: 999px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.ayurAptayu-treatmentPlanCard {
+  order: 1;
+  padding: 20px 16px;
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+}
+
+.ayurAptayu-treatmentPlanCard h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+}
+
+.ayurAptayu-treatmentPlanCard > p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-treatmentPlanPrice {
+  margin-top: 20px;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-treatmentPlanCard .ayurAptayu-cta,
+.ayurAptayu-treatmentCallbackCard .ayurAptayu-cta,
+.ayurAptayu-treatmentQuizCard .ayurAptayu-cta {
+  margin-top: 20px;
+  border: 1px solid var(--ayurAptayu-primary);
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 44px;
+  padding: 12px 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ayurAptayu-treatmentPlanCard .ayurAptayu-cta,
+.ayurAptayu-treatmentQuizCard .ayurAptayu-cta {
+  width: 100%;
+}
+
+.ayurAptayu-treatmentCostGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.ayurAptayu-treatmentCostGrid > img {
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
+
+.ayurAptayu-treatmentCallbackCard {
+  padding: 20px 16px;
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+}
+
+.ayurAptayu-treatmentCallbackCard h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+}
+
+.ayurAptayu-treatmentCallbackCard p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-treatmentCallbackCard form {
+  margin-top: 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.ayurAptayu-treatmentCallbackCard input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--ayurAptayu-border);
+  border-radius: 16px;
+  padding: 10px 12px;
+  background-color: var(--ayurAptayu-card-bg);
+  color: var(--ayurAptayu-text-primary);
+  font-size: 16px;
+  outline: none;
+}
+
+.ayurAptayu-treatmentDoctorsGrid {
+  margin-top: 26px;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 86vw);
+  gap: 18px 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  padding: 14px 0 8px;
+}
+
+.ayurAptayu-treatmentDoctorCard {
+  background-color: var(--ayurAptayu-primary-light);
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+}
+
+.ayurAptayu-treatmentDoctorBadge {
+  display: inline-flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  border: 1px solid var(--ayurAptayu-primary);
+  background-color: var(--ayurAptayu-primary);
+  color: var(--ayurAptayu-card-bg);
+  min-width: 96px;
+  justify-content: center;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.ayurAptayu-treatmentDoctorMain {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ayurAptayu-treatmentDoctorMain img {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.ayurAptayu-treatmentDoctorMain h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--ayurAptayu-text-primary);
+}
+
+.ayurAptayu-treatmentDoctorMain p {
+  margin: 6px 0 0;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.ayurAptayu-container.ayurAptayu-treatmentStatBanner {
+  padding: 20px 16px;
+}
+
+.ayurAptayu-treatmentStatBanner {
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+}
+
+.ayurAptayu-treatmentStatBanner p {
+  margin: 0;
+  color: var(--ayurAptayu-primary);
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.ayurAptayu-treatmentJourneyList {
+  margin-top: 20px;
+  display: grid;
+  gap: 28px;
+}
+
+.ayurAptayu-treatmentJourneyRow {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding-left: 24px;
+}
+
+.ayurAptayu-treatmentJourneyStep {
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 12px 16px;
+  position: relative;
+}
+
+.ayurAptayu-treatmentJourneyStep::before {
+  content: '';
+  position: absolute;
+  left: -31px;
+  bottom: -8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background-color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-treatmentJourneyStep span {
+  margin: 0;
+  display: inline-block;
+  color: var(--ayurAptayu-primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ayurAptayu-treatmentJourneyStep h3 {
+  margin-top: 6px;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+}
+
+.ayurAptayu-treatmentJourneyDivider {
+  display: block;
+  position: absolute;
+  left: 9px;
+  top: -14px;
+  bottom: -14px;
+  width: 2px;
+  background-color: var(--ayurAptayu-border);
+}
+
+.ayurAptayu-treatmentJourneyCard {
+  border-radius: 16px;
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ayurAptayu-treatmentJourneyIconWrap {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  border-radius: 999px;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-card-bg);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.ayurAptayu-treatmentJourneyIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ayurAptayu-treatmentJourneyImage {
+  width: 100px;
+  max-width: none;
+  aspect-ratio: 1;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.ayurAptayu-treatmentJourneyBody h4 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.ayurAptayu-treatmentJourneyBody p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-treatmentJourneyPoints {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ayurAptayu-treatmentJourneyPoints span {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ayurAptayu-treatmentJourneyPoints span img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-card-bg);
+  border-radius: 999px;
+  padding: 6px;
+  object-fit: contain;
+}
+
+.ayurAptayu-treatmentJourneyPoints span em {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--ayurAptayu-primary);
+}
+
+.ayurAptayu-treatmentQuiz {
+  position: relative;
+  overflow: hidden;
+}
+
+.ayurAptayu-treatmentQuizBackdrop {
+  min-height: 220px;
+  background-size: cover;
+  background-position: center top;
+  border-radius: 16px 16px 0 0;
+}
+
+.ayurAptayu-treatmentQuizCard {
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+  background-color: var(--ayurAptayu-primary-light);
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.ayurAptayu-treatmentQuizCard > p {
+  margin-top: 0.75rem;
+  color: var(--ayurAptayu-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ayurAptayu-treatmentQuizPoints {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ayurAptayu-treatmentQuizPoints span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.ayurAptayu-treatmentQuizPoints span img {
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  border: 1px solid var(--ayurAptayu-border);
+  background-color: var(--ayurAptayu-card-bg);
+  object-fit: contain;
+}
+
+.ayurAptayu-treatmentQuizPoints span em {
+  font-style: normal;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--ayurAptayu-primary);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .ayurAptayu-treatmentHero {
+    grid-template-columns: minmax(0, 34%) minmax(0, 66%);
+    grid-template-areas:
+      'image content'
+      'image proof';
+    grid-template-rows: minmax(0, 1fr) auto;
+    min-height: 420px;
+  }
+
+  .ayurAptayu-treatmentHeroImage {
+    min-height: 100%;
+    max-height: none;
+    height: 100%;
+    border-bottom: none;
+    border-right: 1px solid var(--ayurAptayu-border);
+  }
+
+  .ayurAptayu-treatmentHeroContent {
+    padding: 30px;
+  }
+
+  .ayurAptayu-treatmentHeroRatings {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .ayurAptayu-treatmentProofGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .ayurAptayu-treatmentProofCard:nth-child(3) {
+    border-right: 1px solid var(--ayurAptayu-border);
+  }
+
+  .ayurAptayu-treatmentProofCard:nth-child(4) {
+    grid-column: auto;
+    display: block;
+  }
+
+  .ayurAptayu-treatmentProofCard:nth-child(4) .ayurAptayu-treatmentProofMetric {
+    margin: 0 0 10px;
+  }
+
+  .ayurAptayu-treatmentBenefitsGrid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .ayurAptayu-treatmentRisks {
+    grid-template-columns: minmax(0, 32%) minmax(0, 68%);
+    gap: 26px;
+  }
+
+  .ayurAptayu-treatmentRisksGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ayurAptayu-treatmentOutcomesGrid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .ayurAptayu-treatmentOutcomesGrid .ayurAptayu-treatmentOutcomeCard:nth-child(1),
+  .ayurAptayu-treatmentOutcomesGrid .ayurAptayu-treatmentOutcomeCard:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  .ayurAptayu-treatmentOutcomesGrid .ayurAptayu-treatmentOutcomeCard:nth-child(n + 3) {
+    grid-column: span 2;
+  }
+
+  .ayurAptayu-treatmentOutcomesGrid .ayurAptayu-treatmentOutcomeCard:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .ayurAptayu-treatmentPlan {
+    grid-template-columns: minmax(0, 52%) minmax(0, 48%);
+    align-items: stretch;
+  }
+
+  .ayurAptayu-treatmentPlanIntro {
+    order: 1;
+  }
+
+  .ayurAptayu-treatmentPlanCard {
+    order: 2;
+    padding: 24px;
+  }
+
+  .ayurAptayu-treatmentPlanIntro li {
+    font-size: 16px;
+  }
+
+  .ayurAptayu-treatmentCostGrid {
+    grid-template-columns: minmax(0, 58%) minmax(0, 42%);
+    gap: 20px;
+  }
+
+  .ayurAptayu-treatmentCostGrid > img {
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  .ayurAptayu-treatmentCallbackCard {
+    padding: 24px;
+  }
+
+  .ayurAptayu-treatmentCallbackCard form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 10px;
+    row-gap: 12px;
+  }
+
+  .ayurAptayu-treatmentCallbackCard .ayurAptayu-cta {
+    grid-column: 1 / 2;
+    width: fit-content;
+    min-width: 180px;
+  }
+
+  .ayurAptayu-treatmentDoctorsGrid {
+    margin-bottom: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    overflow: visible;
+    gap: 16px;
+    padding: 16px 0 0;
+  }
+
+  .ayurAptayu-treatmentJourneyRow {
+    grid-template-columns: minmax(0, 30%) 24px minmax(0, 70%);
+    align-items: stretch;
+    gap: 0;
+    padding-left: 0;
+  }
+
+  .ayurAptayu-treatmentJourneyDivider {
+    position: relative;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    width: 24px;
+    background: none;
+  }
+
+  .ayurAptayu-treatmentJourneyStep::before {
+    display: none;
+  }
+
+  .ayurAptayu-treatmentJourneyDivider::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--ayurAptayu-border);
+  }
+
+  .ayurAptayu-treatmentJourneyDivider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background-color: var(--ayurAptayu-primary);
+    transform: translateY(-50%);
+  }
+
+  .ayurAptayu-treatmentJourneyCard {
+    padding: 20px;
+    gap: 16px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .ayurAptayu-treatmentJourneyCard--media {
+    display: grid;
+    grid-template-columns: 160px minmax(0, 1fr);
+  }
+
+  .ayurAptayu-treatmentJourneyCard--points {
+    display: block;
+  }
+
+  .ayurAptayu-treatmentJourneyImage {
+    width: 100%;
+    height: 160px;
+  }
+
+  .ayurAptayu-treatmentQuizBackdrop {
+    min-height: 360px;
+  }
+
+  .ayurAptayu-treatmentQuizCard {
+    padding: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ayurAptayu-treatmentPage {
+    padding: 0 80px;
+  }
+
+  .ayurAptayu-treatmentBenefits,
+  .ayurAptayu-treatmentRisks,
+  .ayurAptayu-treatmentOutcomes,
+  .ayurAptayu-treatmentPlan,
+  .ayurAptayu-treatmentCost,
+  .ayurAptayu-treatmentDoctors,
+  .ayurAptayu-treatmentStatBanner,
+  .ayurAptayu-treatmentJourney,
+  .ayurAptayu-treatmentQuiz {
+    margin-top: 64px;
+  }
+
+  .ayurAptayu-treatmentBenefits h2,
+  .ayurAptayu-treatmentOutcomes h2,
+  .ayurAptayu-treatmentPlan h2,
+  .ayurAptayu-treatmentCost h2,
+  .ayurAptayu-treatmentDoctors h2,
+  .ayurAptayu-treatmentJourney h2,
+  .ayurAptayu-treatmentQuiz h2 {
+    font-size: 40px;
+    line-height: 1.16;
+  }
+
+  .ayurAptayu-treatmentHeroContent {
+    padding: 40px;
+  }
+
+  .ayurAptayu-treatmentHeroContent h1 {
+    font-size: 46px;
+  }
+
+  .ayurAptayu-treatmentHeroContent > p,
+  .ayurAptayu-treatmentBenefits > p,
+  .ayurAptayu-treatmentCost > p,
+  .ayurAptayu-treatmentDoctors > p,
+  .ayurAptayu-treatmentJourney > p,
+  .ayurAptayu-treatmentRisksIntro p,
+  .ayurAptayu-treatmentPlanIntro p,
+  .ayurAptayu-treatmentPlanCard > p,
+  .ayurAptayu-treatmentCallbackCard p,
+  .ayurAptayu-treatmentJourneyBody p,
+  .ayurAptayu-treatmentQuizCard > p {
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .ayurAptayu-treatmentHeroRatings span {
+    font-size: 20px;
+  }
+
+  .ayurAptayu-treatmentHeroRatings img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ayurAptayu-treatmentProofCard {
+    padding: 20px;
+  }
+
+  .ayurAptayu-treatmentProofMetric {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+
+  .ayurAptayu-treatmentProofCard span {
+    font-size: 16px;
+  }
+
+  .ayurAptayu-treatmentBenefitCard p {
+    font-size: 18px;
+  }
+
+  .ayurAptayu-container.ayurAptayu-treatmentRisks {
+    padding: 40px 50px;
+  }
+
+  .ayurAptayu-treatmentRisksIntro h3 {
+    font-size: 40px;
+    line-height: 1.16;
+  }
+
+  .ayurAptayu-treatmentRiskItem h4 {
+    font-size: 24px;
+  }
+
+  .ayurAptayu-treatmentOutcomesGrid {
+    gap: 20px;
+  }
+
+  .ayurAptayu-treatmentOutcomeCard {
+    min-height: 200px;
+    padding: 24px;
+  }
+
+  .ayurAptayu-treatmentPlanPrice {
+    font-size: 42px;
+    margin-top: 28px;
+  }
+
+  .ayurAptayu-treatmentPlanCard,
+  .ayurAptayu-treatmentCallbackCard {
+    padding: 40px;
+  }
+
+  .ayurAptayu-treatmentPlanCard h3,
+  .ayurAptayu-treatmentCallbackCard h3,
+  .ayurAptayu-treatmentJourneyBody h4 {
+    font-size: 30px;
+    line-height: 1.08;
+  }
+
+  .ayurAptayu-treatmentPlanCard .ayurAptayu-cta,
+  .ayurAptayu-treatmentCallbackCard .ayurAptayu-cta,
+  .ayurAptayu-treatmentQuizCard .ayurAptayu-cta {
+    width: fit-content;
+    min-width: 180px;
+    font-size: 18px;
+  }
+
+  .ayurAptayu-treatmentDoctorMain img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .ayurAptayu-treatmentDoctorMain h3 {
+    font-size: 22px;
+  }
+
+  .ayurAptayu-container.ayurAptayu-treatmentStatBanner {
+    padding: 30px;
+  }
+
+  .ayurAptayu-treatmentStatBanner p {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .ayurAptayu-treatmentJourneyList {
+    margin-top: 30px;
+    gap: 50px;
+  }
+
+  .ayurAptayu-treatmentJourneyRow {
+    grid-template-columns: minmax(0, 32%) 36px minmax(0, 68%);
+  }
+
+  .ayurAptayu-treatmentJourneyDivider {
+    width: 36px;
+  }
+
+  .ayurAptayu-treatmentJourneyDivider::before {
+    left: 17px;
+  }
+
+  .ayurAptayu-treatmentJourneyDivider::after {
+    left: 13px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .ayurAptayu-treatmentJourneyStep {
+    padding: 20px;
+  }
+
+  .ayurAptayu-treatmentJourneyStep h3 {
+    font-size: 30px;
+  }
+
+  .ayurAptayu-treatmentJourneyIconWrap {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+  }
+
+  .ayurAptayu-treatmentJourneyCard--media {
+    grid-template-columns: 180px minmax(0, 1fr);
+  }
+
+  .ayurAptayu-treatmentJourneyImage {
+    height: 180px;
+  }
+
+  .ayurAptayu-treatmentJourneyPoints {
+    margin-top: 24px;
+    grid-template-columns: repeat(3, minmax(0, max-content));
+    gap: 30px;
+  }
+
+  .ayurAptayu-treatmentJourneyPoints span img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ayurAptayu-treatmentJourneyPoints span em {
+    font-size: 16px;
+  }
+
+  .ayurAptayu-treatmentQuizBackdrop {
+    min-height: 620px;
+    border-radius: 16px;
+  }
+
+  .ayurAptayu-treatmentQuizCard {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    width: min(52%, 845px);
+    border-radius: 16px;
+    padding: 40px 60px;
+  }
+
+  .ayurAptayu-treatmentQuizPoints {
+    margin-top: 34px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .ayurAptayu-treatmentQuizPoints span img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .ayurAptayu-treatmentQuizPoints span em {
+    font-size: 18px;
+  }
+}
